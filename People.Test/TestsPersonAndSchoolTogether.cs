@@ -4,10 +4,17 @@ namespace People.Test
 {
     public class TestsPersonAndSchoolTogether
     {
+        private readonly BasePersonTests _personTestsHelper = new BasePersonTests();
+        private readonly BaseSchoolTests _schoolTestsHelper = new BaseSchoolTests();
         [Fact]
         public void MathieuWithComputerScienceShouldAcceptHelhaSchool()
         {
-            // how to get helha build from BaseSchoolTests class, and Mathieu from BasePersonTests class in order to write this test ?
+            var m = _personTestsHelper.BuildMathieuAsStudent();
+            var h = _schoolTestsHelper.BuildHelhaTournai();
+
+            m.CurrentSchool = h;
+            
+            Assert.Equal(h, m.CurrentSchool);
         }
     }
 }
