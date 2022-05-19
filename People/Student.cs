@@ -7,10 +7,6 @@
         public School? CurrentSchool
         {
             get => _currentSchool;
-            set
-            {
-                if (value is not null && (Attrait & value.Attrait) == Attrait) _currentSchool = value;
-            }
         }
 
         public bool TrySetSchool(School s)
