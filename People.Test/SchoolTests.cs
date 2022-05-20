@@ -4,7 +4,8 @@ namespace People.Test
 {
     public class SchoolTests
     {
-        private readonly BaseSchoolTests _schoolTestsHelper = new BaseSchoolTests();
+        private readonly BaseSchoolTests _schoolTestsHelper = new();
+
         [Fact]
         public void HelhaShouldBePublic()
         {

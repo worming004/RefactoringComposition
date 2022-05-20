@@ -2,24 +2,19 @@
 {
     public class Student : Person
     {
-        private School? _currentSchool;
+        public School? CurrentSchool { get; private set; }
 
-        public School? CurrentSchool
-        {
-            get => _currentSchool;
-        }
+        public Attrait Attrait { get; set; }
 
         public bool TrySetSchool(School s)
         {
             if (s is not null && (Attrait & s.Attrait) == Attrait)
             {
-                _currentSchool = s;
+                CurrentSchool = s;
                 return true;
             }
 
             return false;
         }
-
-        public Attrait Attrait { get; set; }
     }
 }

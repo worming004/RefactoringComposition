@@ -4,7 +4,8 @@
     {
         internal Student BuildMathieuAsStudent()
         {
-            return new Student {FirstName = "Mathieu", LastName = "Scolas", Attrait = Attrait.ComputerScience | Attrait.Math};
+            return new Student
+                {FirstName = "Mathieu", LastName = "Scolas", Attrait = Attrait.ComputerScience | Attrait.Math};
         }
     }
 }

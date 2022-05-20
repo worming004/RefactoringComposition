@@ -4,8 +4,8 @@ namespace People.Test
 {
     public class PersonTests
     {
-        private readonly BasePersonTests _personTestsHelper = new BasePersonTests();
-        
+        private readonly BasePersonTests _personTestsHelper = new();
+
         [Fact]
         public void PersonHaveName()
         {

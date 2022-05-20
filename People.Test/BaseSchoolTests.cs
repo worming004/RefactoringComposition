@@ -4,7 +4,8 @@
     {
         public School BuildHelhaTournai()
         {
-            return new() {Name = "Helha", IsPublic = true, CityName = "Tournai", Attrait = Attrait.ComputerScience};
+            return new School
+                {Name = "Helha", IsPublic = true, CityName = "Tournai", Attrait = Attrait.ComputerScience};
         }
     }
 }
